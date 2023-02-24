@@ -38,12 +38,12 @@ echo "Locales configured Successfully"
 ####################################################
 echo -e "nameserver 1.1.1.1\nameserver 8.8.8.8\nnameserver8.8.4.4" > /etc/resolv.conf
 chattr +i /etc/resolv.conf
-echo "Namservers configured!"
+echo "Nameservers configured!"
 ##################################################
 
 sudo pacman -S grub networkmanager network-manager-applet dialog wireless_tools wpa_supplicants base-devel linux-headers firefox xorg-server xorg-xinit libx11 libxinerama libxft webkit2gtk plasma-desktop dolphin konsole  --noconfirm
 
-# You can actually configure this to install grub yourself by taking user's input during disk setup, I'll leave that to you to learn :)
+# You can install grub automatically by taking the user's input during the disk setup itself and saving it in a variable. Leaving to that to you so you can learn :)
 echo "Install Grub Yourself"
 echo "Enter the password you want to set. The typed password will not appear in the console."
 read -s passw
